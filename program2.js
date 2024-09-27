@@ -22,13 +22,13 @@ var romanToInt = function(s) {
 
         // If the next value is greater, subtract the current value (e.g., IV -> 5 - 1)
         if (nextValue > presentValue) {
-            total -= presentValue;
+            totalNum -= presentValue;
         } else {
-            total += presentValue;
+            totalNum += presentValue;
         }
     }
 
-    return total;
+    return totalNum;
     
 };
 
