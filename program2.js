@@ -15,12 +15,11 @@ var romanToInt = function(s) {
 
     let totalNum = 0;
 
-    // Loop through the Roman string
     for (let i = 0; i < romanCon.length; i++) {
         const presentValue = romanCon[roman[i]];
         const nextValue = romanCon[roman[i + 1]];
 
-        // If the next value is greater, subtract the current value (e.g., IV -> 5 - 1)
+        
         if (nextValue > presentValue) {
             totalNum -= presentValue;
         } else {
