@@ -25,7 +25,7 @@ var isValid = function(s) {
     // return Mystack.length === 0;
     const stack = [];
 
-    for (let char of str) {
+    for (let char of s) {
         
         if (char === '(' || char === '{' || char === '[') {
             stack.push(char);
