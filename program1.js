@@ -16,13 +16,13 @@ var isValid = function(s) {
                 return false;  
             }
 
-            const lastOpen = stack.pop();
+            const last = Mystack.pop();
 
         
             if (
-                (char === ')' && lastOpen !== '(') ||
-                (char === '}' && lastOpen !== '{') ||
-                (char === ']' && lastOpen !== '[')
+                (char === ')' && last !== '(') ||
+                (char === '}' && last!== '{') ||
+                (char === ']' && last!== '[')
             ) {
                 return false;
             }
