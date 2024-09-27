@@ -23,6 +23,34 @@ var isValid = function(s) {
     //     }
     // }
     // return Mystack.length === 0;
+    const stack = [];
+
+    for (let char of str) {
+        
+        if (char === '(' || char === '{' || char === '[') {
+            stack.push(char);
+        }
+        
+        else if (char === ')' || char === '}' || char === ']') {
+            if (stack.length === 0) {
+                return false;  
+            }
+
+            const lastOpen = stack.pop();
+
+        
+            if (
+                (char === ')' && lastOpen !== '(') ||
+                (char === '}' && lastOpen !== '{') ||
+                (char === ']' && lastOpen !== '[')
+            ) {
+                return false;
+            }
+        }
+    }
+
+    
+    return stack.length === 0;
     
 };
 
