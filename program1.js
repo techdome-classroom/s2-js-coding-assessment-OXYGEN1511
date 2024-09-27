@@ -10,22 +10,22 @@ var isValid = function(s) {
         ']': '['
     };
 
-    for (let ch of s) {
-        // If it's an opening bracket, push it to the stack
-        if (ch === '(' || ch === '{' || ch === '[') {
-            stack.push(ch);
-        }
-        // If it's a closing bracket
-        else if (ch === ')' || ch === '}' || ch === ']') {
-            if (stack.length === 0 || stack.pop() !== pairs[ch]) {
+    for (let char of str) {
+        // If char is a closing bracket
+        if (char in pairs) {
+            // Pop from stack if there's a match, or use a dummy value
+            if (stack.pop() !== pairs[char]) {
                 return false;
             }
         }
+        // If char is an opening bracket
+        else if (char === '(' || char === '{' || char === '[') {
+            stack.push(char);
+        }
     }
 
-   
+    // Stack should be empty if balanced
     return stack.length === 0;
-
     
 };
 
