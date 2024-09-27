@@ -20,9 +20,9 @@ var isValid = function(s) {
 
         
             if (
-                (char === ')' && last !== '(') ||
-                (char === '}' && last!== '{') ||
-                (char === ']' && last!== '[')
+                (ch === ')' && last !== '(') ||
+                (ch === '}' && last!== '{') ||
+                (ch === ']' && last!== '[')
             ) {
                 return false;
             }
