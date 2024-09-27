@@ -3,7 +3,7 @@
  * @return {number}
  */
 var romanToInt = function(s) {
-    const romanCon = {
+    const romanMap = {
         'I': 1,
         'V': 5,
         'X': 10,
@@ -13,21 +13,22 @@ var romanToInt = function(s) {
         'M': 1000
     };
 
-    let totalNum = 0;
+    let total = 0;
 
-    for (let i = 0; i < romanCon.length; i++) {
-        const presentValue = romanCon[roman[i]];
-        const nextValue = romanCon[roman[i + 1]];
+    // Loop through the Roman string
+    for (let i = 0; i < roman.length; i++) {
+        const currentValue = romanMap[roman[i]];
+        const nextValue = romanMap[roman[i + 1]];
 
-        
-        if (nextValue > presentValue) {
-            totalNum -= presentValue;
+        // If the next value is greater, subtract the current value (e.g., IV -> 5 - 1)
+        if (nextValue > currentValue) {
+            total -= currentValue;
         } else {
-            totalNum += presentValue;
+            total += currentValue;
         }
     }
 
-    return totalNum;
+    return total;
     
 };
 
