@@ -21,7 +21,7 @@ var romanToInt = function(s) {
         const nextValue = romanCon[roman[i + 1]];
 
         // If the next value is greater, subtract the current value (e.g., IV -> 5 - 1)
-        if (nextValue > currentValue) {
+        if (nextValue > presentValue) {
             total -= currentValue;
         } else {
             total += currentValue;
