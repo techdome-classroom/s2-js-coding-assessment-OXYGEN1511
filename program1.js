@@ -11,8 +11,8 @@ var isValid = function(s) {
             Mystack.push(char);
         }
         
-        else if (char === ')' || char === '}' || char === ']') {
-            if (stack.length === 0) {
+        else if (ch === ')' || ch === '}' || ch === ']') {
+            if (Mystack.length === 0) {
                 return false;  
             }
 
