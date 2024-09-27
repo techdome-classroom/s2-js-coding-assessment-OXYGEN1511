@@ -10,9 +10,9 @@ var isValid = function(s) {
         ']': '['
     };
 
-    for (let char of str) {
+    for (let char of s) {
         
-        if (char in pairs) {
+        if (char in pairOF) {
           
             if (stack.pop() !== pairs[char]) {
                 return false;
