@@ -22,8 +22,6 @@ var isValid = function(s) {
             stack.push(char);
         }
     }
-
-    // Stack should be empty if balanced
     return stack.length === 0;
     
 };
