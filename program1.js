@@ -22,7 +22,7 @@ var isValid = function(s) {
             Mystack.push(ch);
         }
     }
-    return stack.length === 0;
+    return Mystack.length === 0;
     
 };
 
