@@ -17,8 +17,8 @@ var romanToInt = function(s) {
 
     // Loop through the Roman string
     for (let i = 0; i < romanCon.length; i++) {
-        const currentValue = romanMap[roman[i]];
-        const nextValue = romanMap[roman[i + 1]];
+        const currentValue = romanCon[roman[i]];
+        const nextValue = romanCon[roman[i + 1]];
 
         // If the next value is greater, subtract the current value (e.g., IV -> 5 - 1)
         if (nextValue > currentValue) {
