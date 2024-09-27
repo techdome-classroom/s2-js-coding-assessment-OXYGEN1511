@@ -10,11 +10,11 @@ var isValid = function(s) {
         ']': '['
     };
 
-    for (let char of s) {
+    for (let ch of s) {
         
-        if (char in pairOF) {
+        if (ch in pairOF) {
           
-            if (Mystack.pop() !== pairOF[char]) {
+            if (Mystack.pop() !== pairOF[ch]) {
                 return false;
             }
         }
