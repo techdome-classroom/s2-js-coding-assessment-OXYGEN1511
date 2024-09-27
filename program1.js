@@ -8,7 +8,7 @@ var isValid = function(s) {
     for (let ch of s) {
         
         if (ch === '(' || ch === '{' || ch === '[') {
-            stack.push(char);
+            Mystack.push(char);
         }
         
         else if (char === ')' || char === '}' || char === ']') {
