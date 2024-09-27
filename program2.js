@@ -17,13 +17,13 @@ var romanToInt = function(s) {
 
     
     for (let i = 0; i < s.length; i++) {
-        const  = romanNum[s[i]];
+        const curr = romanNum[s[i]];
         const nextValue = romanNum[s[i + 1]];
 
-        if (nextValue > ) {
-            total -= ;
+        if (nextValue > curr) {
+            total -= curr;
         } else {
-            total += ;
+            total += curr;
         }
     }
 
