@@ -11,7 +11,7 @@ var isValid = function(s) {
     };
 
     for (let char of str) {
-        // If char is a closing bracket
+        
         if (char in pairs) {
             // Pop from stack if there's a match, or use a dummy value
             if (stack.pop() !== pairs[char]) {
