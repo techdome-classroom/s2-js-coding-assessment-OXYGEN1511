@@ -19,7 +19,7 @@ var isValid = function(s) {
             }
         }
         else if (ch === '(' || ch === '{' || ch === '[') {
-            stack.push(ch);
+            Mystack.push(ch);
         }
     }
     return stack.length === 0;
