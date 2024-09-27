@@ -14,7 +14,7 @@ var isValid = function(s) {
         
         if (char in pairOF) {
           
-            if (stack.pop() !== pairOF[char]) {
+            if (Mystack.pop() !== pairOF[char]) {
                 return false;
             }
         }
