@@ -13,7 +13,7 @@ var isValid = function(s) {
     for (let char of str) {
         
         if (char in pairs) {
-            // Pop from stack if there's a match, or use a dummy value
+          
             if (stack.pop() !== pairs[char]) {
                 return false;
             }
