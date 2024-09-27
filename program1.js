@@ -3,11 +3,11 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    const stack = [];
+    const Mystack = [];
 
-    for (let char of s) {
+    for (let ch of s) {
         
-        if (char === '(' || char === '{' || char === '[') {
+        if (ch === '(' || ch === '{' || ch === '[') {
             stack.push(char);
         }
         
