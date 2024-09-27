@@ -4,7 +4,7 @@
  */
 var isValid = function(s) {
     const Mystack = [];
-    const pairs = {
+    const pair = {
         ')': '(',
         '}': '{',
         ']': '['
