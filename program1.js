@@ -18,7 +18,6 @@ var isValid = function(s) {
                 return false;
             }
         }
-        // If char is an opening bracket
         else if (char === '(' || char === '{' || char === '[') {
             stack.push(char);
         }
