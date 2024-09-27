@@ -18,7 +18,7 @@ var isValid = function(s) {
                 return false;
             }
         }
-        else if (char === '(' || char === '{' || char === '[') {
+        else if (ch === '(' || ch === '{' || ch === '[') {
             stack.push(char);
         }
     }
