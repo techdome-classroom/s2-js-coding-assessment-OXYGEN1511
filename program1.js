@@ -23,7 +23,7 @@ var isValid = function(s) {
         }
     }
 
-    // Return true if the stack is empty (all brackets matched)
+   
     return stack.length === 0;
 
     
