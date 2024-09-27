@@ -13,7 +13,7 @@ var romanToInt = function(s) {
         'M': 1000
     };
 
-    let total = 0;
+    let  = 0;
 
     
     for (let i = 0; i < s.length; i++) {
@@ -21,13 +21,13 @@ var romanToInt = function(s) {
         const next = romanNum[s[i + 1]];
 
         if (next > curr) {
-            total -= curr;
+             -= curr;
         } else {
-            total += curr;
+             += curr;
         }
     }
 
-    return total;
+    return ;
     
 };
 
