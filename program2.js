@@ -18,9 +18,9 @@ var romanToInt = function(s) {
     
     for (let i = 0; i < s.length; i++) {
         const curr = romanNum[s[i]];
-        const  = romanNum[s[i + 1]];
+        const next = romanNum[s[i + 1]];
 
-        if ( > curr) {
+        if (next > curr) {
             total -= curr;
         } else {
             total += curr;
