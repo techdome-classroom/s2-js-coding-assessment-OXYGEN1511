@@ -3,6 +3,29 @@
  * @return {boolean}
  */
 var isValid = function(s) {
+    const stack = [];
+    const pairs = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+
+    for (let ch of s) {
+        // If it's an opening bracket, push it to the stack
+        if (ch === '(' || ch === '{' || ch === '[') {
+            stack.push(ch);
+        }
+        // If it's a closing bracket
+        else if (ch === ')' || ch === '}' || ch === ']') {
+            if (stack.length === 0 || stack.pop() !== pairs[ch]) {
+                return false;
+            }
+        }
+    }
+
+    // Return true if the stack is empty (all brackets matched)
+    return stack.length === 0;
+
     
 };
 
